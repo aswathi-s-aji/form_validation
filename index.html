@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+		/>
+	</head>
+	<body>
+		<div class="container-fluid style d-flex">
+			<div class="div_size p-5 align-self-center">
+				<div>
+					<h1>Travel reservation form</h1>
+				</div>
+				<div class="mt-4">
+					<p><span>*</span> denotes mandatory</p>
+				</div>
+				<form action="" onsubmit="return validate()">
+					<div class="row mt-2">
+						<div class="col-md-6">
+							<label class="fs-5">Full name<span>*</span>:</label>
+						</div>
+						<div class="col-md-6">
+							<input
+								type="text"
+								name="fname"
+								placeholder="FirstName LastName"
+								id="a"
+							/>
+						</div>
+					</div>
+					<div class="row mt-2">
+						<div class="col-md-6">
+							<label class="fs-5">Email<span>*</span>:</label>
+						</div>
+						<div class="col-md-6">
+							<input
+								type="text"
+								name="email"
+								placeholder="email"
+								id="b"
+							/>
+						</div>
+					</div>
+					<div class="row mt-2">
+						<div class="col-md-6">
+							<label for="package" class="fs-5"
+								>Select Tour Package<span>*</span>:</label
+							>
+						</div>
+						<div class="col-md-6">
+							<select name="tourpacakge" id="package">
+								<option value="0">Select</option>
+								<option value="1">Goa</option>
+								<option value="2">Manali</option>
+								<option value="3">Kashmir</option>
+								<option value="4">Delhi</option>
+								<option value="5">Hydrabad</option>
+							</select>
+						</div>
+					</div>
+					<div class="row mt-2">
+						<div class="col-md-6">
+							<label class="fs-5"
+								>Arrival date<span>*</span>:</label
+							>
+						</div>
+						<div class="col-md-6">
+							<input type="date" id="y" />
+						</div>
+					</div>
+					<div class="row mt-2">
+						<div class="col-md-6">
+							<label class="fs-5"
+								>Number of persons<span>*</span>:</label
+							>
+						</div>
+						<div class="col-md-6">
+							<input type="text" id="x" />
+						</div>
+					</div>
+					<div class="row mt-2">
+						<div class="fs-5">
+							<label
+								>What would you want to avail?<span
+									>*</span
+								></label
+							>
+						</div>
+						<div class="mt-2 row">
+							<div class="col-md-6">
+								<label for="boarding">Boarding</label>
+							</div>
+							<div class="col-md-6">
+								<input
+									type="checkbox"
+									id="boarding"
+									name="avail"
+								/>
+							</div>
+						</div>
+						<div class="mt-2 row">
+							<div class="col-md-6">
+								<label for="fooding">Fooding</label>
+							</div>
+							<div class="col-md-6">
+								<input
+									type="checkbox"
+									id="fooding"
+									name="avail"
+								/>
+							</div>
+						</div>
+						<div class="mt-2 row">
+							<div class="col-md-6">
+								<label for="sightseeing">Sight Seeing</label>
+							</div>
+							<div class="col-md-6">
+								<input
+									type="checkbox"
+									id="sightseeing"
+									name="avail"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="row mt-2">
+						<div class="col-md-6">
+							<label class="fs-5">Discount Coupon Code:</label>
+						</div>
+						<div class="col-md-6">
+							<input type="text" />
+						</div>
+					</div>
+					<div class="mt-2">
+						<label class="fs-5"
+							>Terms and conditions<span>*</span>:</label
+						>
+
+						<input type="radio" id="agree" name="condition" />
+						<label for="Iagree">I agree</label>
+						<input type="radio" id="disagree" name="condition" />
+						<label for="disagree">I disagree</label>
+					</div>
+					<div class="row justify-content-center align-items-center">
+						<div class="col-md-3">
+							<input
+								type="submit"
+								value="Complte Reservation"
+								class="p-1 mt-2 bg-warning button"
+							/>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>

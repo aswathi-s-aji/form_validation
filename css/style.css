@@ -1,0 +1,40 @@
+/* Author: Aswathi S A 
+Date: 09/02/2023 */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #3c2a21;
+}
+.style {
+	height: 100vh;
+	background-image: url("../images/image3.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.div_size {
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #b99b69;
+	height: fit-content;
+	border-radius: 25px;
+}
+span {
+	color: #f00;
+	font-size: larger;
+}
+.button {
+	border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+	.style {
+		background-image: none;
+		background-color: #e5ba73;
+		height: fit-content;
+		width: fit-content;
+	}
+	.div_size {
+		width: fit-content;
+	}
+}
